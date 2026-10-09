@@ -13,3 +13,5 @@ cout << " B = " << B << endl;
 
 cout << " Pole " << pole << enl ;
 cout << " Objetosc" << objetosc << endl;
+ return 0 ;
+} 
