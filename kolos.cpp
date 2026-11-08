@@ -19,7 +19,7 @@ cin >> t ;
 int  maxT = t ; 
 int minT = t ; 
 
-for( intn i = 1 ;i < n ; i ++ ) { 
+for( int i = 1 ;i < n ; i ++ ) { 
    cin  >> t ; 
 if ( t > maxT ) maxT = t ; 
 if ( t< minT ) min T = t ; 
