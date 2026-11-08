@@ -1,24 +1,37 @@
 #include<iostream>
 using namespace std ; 
 
-int main () {
+int main () { 
   int N ; 
 
-for ( int i = 0 ; i < 1000 ; i ++ ) { 
-cout << " Podaj liczbe pomiarow : " ; 
-cin >> N ; 
+cout << " Liczba pomirow : " ;
+cin >> n ; 
+
+while ( n <= 0 ) { 
+cout << " Liczba pomiarow musi byc większa od zera " << endl ;
+cout << " Liczba pomiarow  : " ; 
+cin >> n ; 
+}
+
+cout << " Podaj temperatury : " ; 
+int t ; 
+cin >> t ; 
+int  maxT = t ; 
+int minT = t ; 
+
+for( intn i = 1 ;i < n ; i ++ ) { 
+   cin  >> t ; 
+if ( t > maxT ) maxT = t ; 
+if ( t< minT ) min T = t ; 
 } 
-int temperatura ; 
-int max , min ; 
-
-cout >> " Podaj tenperature : " ;
-
-for ( int i < 0 ; i < N ; i++ ) { 
-  cin >> temperatura ;
-
-  if ( i == 0 ) { 
-      max = temperatura ; 
-      min = temperatura ; 
-} 
+if ( maxT == minT ) { 
+cout << " Wszystkie temperatury sa takie same" << maxT << endl ;
+}
 else { 
-if ( temperatura
+cout<< " Najwyzsza temperatura << maxT << endl ; 
+cout << " Najmniejsza temperatura << minT << endl ; 
+cout << " Roznica : " << maxT - minT << endl ; 
+} 
+
+return 0 ; 
+
